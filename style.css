@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *, ::before, ::after{
     margin: 0;
     padding: 0;
@@ -8,12 +11,19 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: #f1f1f1;
 }
 
 .background{
     background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
     width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins';
+}
+
+p{
+    font-family: 'Roboto';
 }
 
 nav{
@@ -91,7 +101,7 @@ nav .menu{
 
 .sec1 .container .left{
     color: white;
-    width: 1110px;
+    width: 1090px;
 }
 
 .sec1 .container .right{
@@ -102,9 +112,14 @@ nav .menu{
     width: 100%;
 }
 
+.sec1 .container .left h2{
+    font-weight:bold;
+}
+
 .sec1 .container .left p{
     padding: 1rem 0 2.5rem 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight: 500;
     line-height: 25px;
 }
 
@@ -273,7 +288,7 @@ nav .menu{
 }
 
 .sec2 .container .bloc p{
-    width: 330px;
+    width: 320px;
     color: rgb(136, 136, 136);
     line-height: 27px;
     font-size: 0.9rem;
@@ -488,13 +503,13 @@ nav .menu{
 
 .sec4 .container .content-top .right p{
     color: rgb(146, 146, 146);
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 25px;
     margin-bottom: 1.5rem;
 }
 
 .sec4 .container .content-top .right{
-    width: 582px;
+    width: 570px;
     padding: 0 20px;
 }
 
@@ -515,13 +530,13 @@ nav .menu{
 }
 
 .sec4 .container .content-bottom .left{
-    width: 582px;
+    width: 570px;
     padding: 0 20px;
 }
 
 .sec4 .container .content-bottom .left p{
     color: rgb(146, 146, 146);
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 25px;
     margin-bottom: 1.5rem;
 }
@@ -558,5 +573,555 @@ nav .menu{
 
     .sec4 .container .content-bottom .left{
         width: 100%;
+    }
+}
+
+/* Section 5 */
+
+.sec5{
+    width: 100%;
+    padding: 4.25rem 0;
+    background: #F6FBFD;
+}
+
+.sec5 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec5 .container .title{
+    margin-bottom: 2em;
+}
+
+.sec5 .container .title a{
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    background: #80b0e7;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.sec5 .container .title h2{
+    padding-top: 1.5rem;
+    font-size: 2em;
+    color:#3c96ff
+}
+
+.sec5 .container .content{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    flex-wrap: wrap;
+}
+
+.sec5 .container .content.active{
+    display: flex;
+    transition: 0.3s;
+}
+
+.sec5 .container .content .cadre{
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.sec5 .container .content .cadre img{
+    border-radius: 10px;
+}
+
+.sec5 .container .point{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec5 .container .point .petit-rond{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(247, 250, 247);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 30px 5px;
+    transition: 0.3s;
+}
+
+.sec5 .container .point .petit-rond.active{
+    background: #3c96ff;
+}
+
+
+@media screen and (max-width: 1120px){
+
+    .sec5 .container .content .cadre img{
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 920px){
+    .sec5 .container .content{
+        justify-content: center;
+    }
+
+    .sec5 .container .content .cadre{
+        margin: 15px;
+    }
+}
+
+/* Section 6 */
+
+.sec6{
+    width: 100%;
+    padding: 4.25rem 0;
+}
+
+.sec6 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec6 .container .title{
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.sec6 .container .title a{
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    background: #80b0e7;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.sec6 .container .title h2{
+    padding-top: 1.5rem;
+    font-size: 2em;
+    color:#3c96ff
+}
+
+.sec6 .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec6 .container .content .card{
+    width: 260px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;  
+    overflow: hidden;
+    position: relative;
+}
+
+.sec6 .container .content .card img{
+    width: 100%;
+}
+
+.sec6 .container .content .card .name{
+    padding: 1rem;
+}
+
+.sec6 .container .content .card .name h3{
+    padding-bottom: 0.4rem;
+}
+
+.sec6 .container .content .card .name p{
+    font-weight: bold;
+    color: grey;
+    font-size: 0.9em;
+}
+
+.sec6 .container .content .card .reseau{
+    width: 40px;
+    background: #2dfbff;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100px);
+    transition: 0.4s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.sec6 .container .content .card .reseau i{
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2em;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.sec6 .container .content .card:hover .reseau{
+    transform: translateX(0px);
+}
+
+@media screen and (max-width: 1200px){
+    .sec6 .container .content{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sec6 .container .content .card{
+        width: 100%;
+    }
+}
+
+/* Section 7 */
+
+.sec7{
+    width: 100%;
+    padding: 4.25rem 0;
+    background: #F6FBFD;
+    position: relative;
+}
+
+.sec7 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sec7 .container .title{
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.sec7 .container .title a{
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    background: #80b0e7;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.sec7 .container .title h2{
+    padding-top: 1.5rem;
+    font-size: 2em;
+    color:#3c96ff
+}
+
+.sec7 .container .wrapper{
+    max-width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;;
+}
+
+.sec7 .container .content-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    padding: 1.5rem;
+}
+
+
+.active-contenu{
+    animation: fade 0.7s forwards;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.sec7 .container .content-2 p{
+    margin: 1.5rem 0;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.sec7 .container .content-2 .person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sec7 .container .content-2 .person h4{
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.sec7 .container .choice{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec7 .container .choice .little-rond:not(:nth-child(1)){
+    margin-left: 0.5rem;
+}
+
+.sec7 .container .choice .little-rond{
+    width: 15px;
+    height: 15px;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec7 .container .choice .little-rond.active{
+    background: #3c96ff;
+}
+
+
+@media screen and (max-width: 350px){
+    .sec7 .container .content-2{
+        padding: 0.5rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sec7 .container .wrapper{
+        height: 400px;
+        padding: 1rem;
+    }
+
+}
+
+/* Section 8 */
+
+.sec8{
+    width: 100%;
+    padding: 4.25rem 0;
+}
+
+.sec8 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec8 .container .part img{
+    width: 140px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec8 .container .part img:hover{
+    transform: translateY(-15px);
+}
+
+
+@media screen and (max-width: 800px){
+    .sec8 .container .part.responsive{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .sec8 .container .part.responsive2{
+        display: none;
+    }
+}
+
+
+/* Section 9 */
+
+.sec9{
+    width: 100%;
+    background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+    padding: 5.25rem 0;
+}
+
+.sec9 .container{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.sec9 .container p{
+    line-height: 25px;
+    margin: 1rem 0 2rem 0;
+    font-weight: bold;
+}
+
+.sec9 .container h2{
+    font-size: 2em;
+}
+
+.sec9 .container form{
+    width: 100%;
+    position: relative;
+}
+
+.sec9 .container form input{
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 1.5rem;
+    border: none;
+    background: #38B3FF;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.3em;
+}
+
+.sec9 .container form button{
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    width: 100%;
+    background: white;
+    color: #3c96ff;
+    border: none;
+    cursor: pointer;
+    left: 90%;
+    font-size: 1.2em;
+}
+
+
+/* Section 10 */
+
+.sec10{
+    width: 100%;
+    padding: 5.25rem 0;
+}
+
+.sec10 .container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.sec10 .container .title{
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.sec10 .container .title a{
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    background: #80b0e7;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.sec10 .container .title h2{
+    padding-top: 2rem;
+    font-size: 2em;
+    color:#3c96ff
+}
+
+.sec10 .container .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec10 .container .content .card{
+    background: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 330px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.sec10 .container .content .card h2{
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.sec10 .container .content .card i{
+    font-size: 2em;
+    color: #3c96ff;
+    margin-bottom: 1rem;
+}
+
+.sec10 .container .content .card p{
+    margin-bottom: 1.5rem;
+    color: rgb(148, 148, 148);
+    font-weight: bold;
+}
+
+.sec10 .container .content .card h5 span{
+    font-size: 3em;
+}
+
+.sec10 .container .content .card button{
+    margin-top: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    width: 170px;
+    letter-spacing: 1px;
+    background: white;
+    border: 2px solid #38B3FF;
+    border-radius: 25px;
+    color: #3c96ff;
+}
+
+.sec10 .container .content .card.blue{
+    background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+    color: white;
+}
+
+.sec10 .container .content .card.blue p {
+    color: white;
+}
+
+.sec10 .container .content .card:hover{
+    background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+    color: white;
+}
+
+.sec10 .container .content .card:hover p{
+    color: white;
+}
+
+
+@media screen and (max-width: 1050px){
+    .sec10 .container .content{
+        justify-content: center;
     }
 }
